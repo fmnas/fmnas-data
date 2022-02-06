@@ -8,5 +8,5 @@ mysqldump --add-drop-table --single-transaction --add-locks --skip-extended-inse
 
 ## Adding a test fixture
 ```shell
-TAG=`TZ='America/Los_Angeles' date "+%y%m%d%H%M"` $SHELL -c 'git tag -f -a $TAG -m "Test fixture $TAG" && git push -f origin $TAG && echo "Created tag $TAG"'
+TAG=`TZ='America/Los_Angeles' date "+%y%m%d%H%M"` $SHELL -c 'git commit -am "Test fixture $TAG" && git tag -f -a $TAG -m "Test fixture $TAG" && git push -f origin $TAG && echo "Created tag $TAG"'
 ```
