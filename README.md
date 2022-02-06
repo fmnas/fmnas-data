@@ -3,7 +3,7 @@ FMNAS public site database
 
 ## Dumping the database
 ```shell
-mysqldump --add-drop-table --single-transaction --add-locks --skip-extended-insert -i fmnas_dev > fmnas_dev.sql
+mysqldump -h mysql.forgetmenotshelter.org -u fmnas_web -p --add-drop-table --single-transaction --add-locks --skip-extended-insert -i fmnas_testing > fmnas_testing.sql
 ```
 
 ## Adding a test fixture
